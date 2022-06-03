@@ -21,6 +21,7 @@
 
 img {
   max-width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -55,6 +56,9 @@ body {
 .insights__content {
   display: grid;
   align-content: start;
+  justify-content: center;
+
+  padding: 71px 0 59px 72px;
 }
 .insights__title {
   font: var(--fw-bold) 2.25rem/1.22 'Inter', sans-serif;
@@ -62,10 +66,42 @@ body {
 .insights__title-purple {
   color: #ab5cdb;
 }
+
 .insights__desc {
   font: var(--fw-regular) 0.938rem/1.67 'Inter', sans-serif;
   opacity: 0.75;
   max-width: 374px;
   margin-top: 25px;
   margin-bottom: 72px;
+}
+
+.insights__list {
+  display: flex;
+  gap: 0 63px;
+}
+
+.insights__item {
+  display: grid;
+  gap: 2px 0;
+}
+
+.insights__subtitle {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: var(--fw-bold);
+}
+
+.insights__info {
+  font: var(--fw-regular) 0.75rem/2.08 'Lexend Deca', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.6;
+}
+
+.insights__img::after {
+  content: '';
+  display: block;
+  width: 503px;
+  height: 446px;
+  background-color: #ab5cdb;
 }
