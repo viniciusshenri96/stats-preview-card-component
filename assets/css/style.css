@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
 /* Variables CSS */
 :root {
@@ -24,10 +24,14 @@ ul {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--color-primary);
   background-color: var(--color-bk);
-  margin: 11.063rem auto;
+  /* margin: 11.063rem auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 0 1.5rem;
 }
 
@@ -56,13 +60,13 @@ body {
   padding: 4.375rem 5.938rem 3.75rem 4.5rem;
 }
 .insights__title {
-  font: var(--fw-bold) 2.25rem/1.22 'Inter', sans-serif;
+  font: var(--fw-bold) 2.25rem/1.22 "Inter", sans-serif;
 }
 .insights__title-purple {
   color: #ab5cdb;
 }
 .insights__desc {
-  font: var(--fw-regular) 0.938rem/1.67 'Inter', sans-serif;
+  font: var(--fw-regular) 0.938rem/1.67 "Inter", sans-serif;
   opacity: 0.75;
   max-width: 23.375rem;
   margin-top: 1.563rem;
@@ -86,7 +90,7 @@ body {
 }
 
 .insights__info {
-  font: var(--fw-regular) 0.75rem/2.08 'Lexend Deca', sans-serif;
+  font: var(--fw-regular) 0.75rem/2.08 "Lexend Deca", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.063rem;
   opacity: 0.6;
